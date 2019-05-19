@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+		.container
+		{
+			
+		 	animation-duration: 0.1s;
+		 	animation-name: out;
+				transition: all 1s;
+			text-align: center;
+			animation-iteration-count:infinite;
+			overflow:hidden;
+
+		}
+		.content
+		{
+			overflow: hidden;
+			height: 100%;
+		}
+	.backgroundImageCVR
+	{
+	position:relative;
+	padding:15px;
+}
+
+div
+{
+font-family: 'Stylish', sans-serif; }
+
+p {
+font-weight: 300
+}
+
+h1 { color:white; 
+}
+
+.background-image
+{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url('./bg.gif');
+	background-size:cover;
+	z-index:1;
+	-webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);	
+}
+.backgroundImageCVR:hover> .background-image
+{
+		background-image:url("./skele.gif");
+}
+.content{
+	position:relative;
+	z-index:2;
+}
+	
+		.parent:hover > .container
+		{
+			
+			-webkit-animation-duration: 1; /* Safari 4.0 - 8.0 */
+		 	animation-name: in;
+				transition: all 1s;
+		 	animation-duration: 0.1s;
+		}
+		.parent:hover> .titulo
+		{
+			
+			animation-iteration-count:infinite;
+				visibility: visible;
+				animation-name: seizure;
+				
+		 	animation-duration: 0.2s;
+		}
+		.titulo
+		{
+					visibility: hidden;
+			font-family: 'Stylish', sans-serif;
+			font-size: 30px;
+			background-color: rgb(8,200,100);
+			color: red;
+			margin-bottom: 100px;
+			border: solid;
+			text-align: center;
+			border-color: orange;
+		}
+@keyframes seizure 
+		{
+			    0%   
+							transition: all 1s;
+			{
+			-ms-transform: rotate(20deg); /* IE 9 */
+			-webkit-transform: rotate(20deg); /* Safari */
+			transform: rotate(20deg); /* Standard syntax */
+			background-color:rgba(255,0,0,0.3); left:0px; top:0px;
+			}
+		    25%  
+			{
+				-ms-transform: rotate(-20deg); /* IE 9 */
+				-webkit-transform: rotate(-20deg); /* Safari */
+				transform: rotate(-20deg); /* Standard syntax */
+				background-color:rgba(255,255,0,0.3), left:200px; top:0px;
+			}
+			
+		    50%  {
+				-ms-transform: rotate(10deg); /* IE 9 */
+				-webkit-transform: rotate(10deg); /* Safari */
+				transform: rotate(10deg); /* Standard syntax */			
+				background-color:rgba(0,0,255,0.3); left:200px; top:200px;
+			}
+		    75%  
+			{
+				-ms-transform: rotate(-10deg); /* IE 9 */
+				-webkit-transform: rotate(-10deg); /* Safari */
+				transform: rotate(-10deg); /* Standard syntax */
+				background-color:rgba(0,255,0,0.3); left:0px; top:200px;
+			}
+		    100% 
+			{
+				-ms-transform: rotate(0deg); /* IE 9 */
+				-webkit-transform: rotate(0deg); /* Safari */
+				transform: rotate(0deg); /* Standard syntax */				     					
+				background-color:red; left:0px; top:0px;
+			}
+		}
+		@keyframes out 
+		{
+			transition: all 1s;
+			-ms-transform: rotate(0deg); /* IE 9 */
+			-webkit-transform: rotate(0deg); /* Safari */
+			transform: rotate(0deg); /* Standard syntax */
+			background-color:red; left:0px; top:0px;
+		
+		}
+		@keyframes in 
+		{
+				    0%   
+							transition: all 0.1s;
+			{
+			-ms-transform: rotate(20deg); /* IE 9 */
+			-webkit-transform: rotate(20deg); /* Safari */
+			transform: rotate(20deg); /* Standard syntax */
+			background-color:rgba(255,0,0,0.3); left:0px; top:0px;
+			}
+		    25%  
+			{
+				-ms-transform: rotate(-20deg); /* IE 9 */
+				-webkit-transform: rotate(-20deg); /* Safari */
+				transform: rotate(-20deg); /* Standard syntax */
+				background-color:rgba(255,255,0,0.3), left:200px; top:0px;
+			}
+			
+		    50%  {
+				-ms-transform: rotate(10deg); /* IE 9 */
+				-webkit-transform: rotate(10deg); /* Safari */
+				transform: rotate(10deg); /* Standard syntax */			
+				background-color:rgba(0,0,255,0.3); left:200px; top:200px;
+			}
+		    75%  
+			{
+				-ms-transform: rotate(-10deg); /* IE 9 */
+				-webkit-transform: rotate(-10deg); /* Safari */
+				transform: rotate(-10deg); /* Standard syntax */
+				background-color:rgba(0,255,0,0.3); left:0px; top:200px;
+			}
+		    100% 
+			{
+				-ms-transform: rotate(0deg); /* IE 9 */
+				-webkit-transform: rotate(0deg); /* Safari */
+				transform: rotate(0deg); /* Standard syntax */				     					
+				background-color:red; left:0px; top:0px;
+			}
+		}
